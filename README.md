@@ -1,6 +1,13 @@
 # nasa lab10
 
-See [Lab10.pdf](./Lab10.pdf) file for more info. 
+## Description
+>See [Lab10.pdf](./Lab10.pdf) file for more info.
+
+Lab requirements
+
+* Nginx
+* Simple CRUD Server
+* Database
 
 ## Set up nginx
 
@@ -50,8 +57,11 @@ sudo apt install redis
 Test redis status
 
 ```shell
->redis-cli
-
+$redis-cli
+127.0.0.1:6379>ping
+PONG
+127.0.0.1:6379>exit
+$
 ```
 
 ## Run server
@@ -68,10 +78,14 @@ Run flask
 python3 server.py
 ```
 
-Access website
+Access website from Host
 
 ```md
 http://localhost:80 
 # or 
 http://10.100.100.<num>:80 (via vpn)
 ```
+
+Another test api approach:Use Postman
+
+![postman screenshot](./postman_screenshot.jpg)
