@@ -1,4 +1,3 @@
-from urllib import response
 from flask import Flask, Response, request
 # import sqlite3
 import redis
